@@ -18,10 +18,10 @@ class Particula:
         self.c2 = uniform(0, 2)
 
     def __str__(self):
-        return ('Posicao: {} → Acuracia: {}%, Precisao: {}%, Recall: {}%'.
+        return ('Posicao: {} -> Acuracia: {}%, Precisao: {}%, Recall: {}%'.
                 format(self.pos, self.acuracia, self.precisao, self.recall))
 
-    def ajustarPosicaoVelocidade(self, melhor_pos_geral):
+    def mover(self, melhor_pos_geral):
         pos = np.array(self.pos, dtype=float)
         vel = np.array(self.vel, dtype=float)
         melhor_pos = np.array(self.melhor_pos, dtype=float)

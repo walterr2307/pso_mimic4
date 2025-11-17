@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from random import randint, uniform
 
 
 class Algoritmo(ABC):
@@ -7,6 +8,10 @@ class Algoritmo(ABC):
         self.max = self.definirMaximo()
         self.qtd_atributos = len(self.max)
         self.indices_float = self.definirIndices()
+
+    @abstractmethod
+    def __str__(self):
+        pass
 
     @abstractmethod
     def definirMinimo(self):
@@ -21,10 +26,6 @@ class Algoritmo(ABC):
         pass
 
     @abstractmethod
-    def definirPosicaoAleatoria(self):
-        pass
-
-    @abstractmethod
     def gerarModelo(self, pos):
         pass
 
@@ -33,6 +34,17 @@ class Algoritmo(ABC):
 
         for i in range(self.qtd_atributos):
             pos.append(self.max[i] // 2)
+
+        return pos
+
+    def definirPosicaoAleatoria(self):
+        pos = []
+
+        for i in range(self.qtd_atributos):
+            if i in self.indices_float:
+                pos.append(round(uniform(self.min[i], self.max[i]), 4))
+            else:
+                pos.append(randint(self.min[i], self.max[i]))
 
         return pos
 
@@ -48,7 +60,7 @@ class Algoritmo(ABC):
     def ajustarPosicao(self, pos):
         for i in range(self.qtd_atributos):
             if i in self.indices_float:
-                pos[i] = round(pos[i], 4)
+                pos[i] = float(round(pos[i], 4))
             else:
                 pos[i] = int(round(pos[i]))
 

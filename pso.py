@@ -2,23 +2,21 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
 from pandas import read_parquet
 from particula import Particula
+
+from logistic_regression import LR
 from knn import KNN
+from rfc import RFC
 
 
 def definirAlgoritmo(tipo_algoritmo):
     if tipo_algoritmo == "KNeighborsClassifier":
         return KNN()
-    else:
-        return None
+    elif tipo_algoritmo == "RandomForestClassifier":
+        return RFC()
+    elif tipo_algoritmo == "LogisticRegression":
+        return LR()
 
-
-def retornarMetricaEscolhida(particula, metrica):
-    if metrica == "acuracia":
-        return particula.acuracia
-    elif metrica == "precisao":
-        return particula.precisao
-    else:
-        return particula.recall
+    return None
 
 
 class PSO:
@@ -26,7 +24,7 @@ class PSO:
         self.tam_enxame = tam_enxame
         self.num_interacoes = num_interacoes
         self.algoritmo = definirAlgoritmo(tipo_algoritmo)
-        self.dataframe = read_parquet(endereco_parquet)
+        self.dataframe = read_parquet(endereco_parquet).head(10000)
         self.metrica = metrica
 
         self.melhor_pos_geral = None
@@ -40,18 +38,24 @@ class PSO:
 
         return train_test_split(x, y, test_size=0.3)
 
-    def ajustarMetricas(self, pos):
-        modelo = self.algoritmo.gerarModelo(pos)
+    def ajustarMetricas(self, particula):
+        modelo = self.algoritmo.gerarModelo(particula.pos)
         modelo.fit(self.x_treinamento, self.y_treinamento)
         previsoes = modelo.predict(self.x_teste)
 
-        return (round(accuracy_score(self.y_teste, previsoes) * 100, 1),
-                round(precision_score(self.y_teste, previsoes) * 100, 1),
-                round(recall_score(self.y_teste, previsoes) * 100, 1))
+        particula.acuracia = round(accuracy_score(self.y_teste, previsoes) * 100, 1)
+        particula.precisao = round(precision_score(self.y_teste, previsoes) * 100, 1)
+        particula.recall = round(recall_score(self.y_teste, previsoes) * 100, 1)
 
     def ajustarMelhoresPosicoes(self, particula):
-        particula.acuracia, particula.precisao, particula.recall = self.ajustarMetricas(particula.pos)
-        performance = retornarMetricaEscolhida(particula, self.metrica)
+        self.ajustarMetricas(particula)
+
+        if self.metrica == "acuracia":
+            performance = particula.acuracia
+        elif self.metrica == "precisao":
+            performance = particula.precisao
+        else:
+            performance = particula.recall
 
         if performance > particula.melhor_perf:
             particula.melhor_perf = performance
@@ -71,14 +75,14 @@ class PSO:
         return enxame
 
     def mover(self, particula):
-        particula.pos, particula.vel = particula.ajustarPosicaoVelocidade(self.melhor_pos_geral)
+        particula.pos, particula.vel = particula.mover(self.melhor_pos_geral)
         particula.pos = self.algoritmo.ajustarPosicao(particula.pos)
         particula.pos = self.algoritmo.ajustarLimites(particula.pos)
 
         self.ajustarMelhoresPosicoes(particula)
 
     def escreverPrimeiraInteracao(self, file, enxame):
-        file.write("1* Interation:\n")
+        file.write(str(self.algoritmo) + "\n\n1* Interation:\n")
 
         for i in range(self.tam_enxame):
             file.write(str(enxame[i]) + "\n")
@@ -94,9 +98,9 @@ class PSO:
     def executar(self):
         enxame = self.gerarEnxame()
 
-        with open("PSO.txt", "w") as file:
+        with open(str(self.algoritmo) + ".txt", "w") as file:
             self.escreverPrimeiraInteracao(file, enxame)
             self.escreverDemaisInteracoes(file, enxame)
 
-            file.write("\nBest Position: {}\nBest Perfomance: {}%".
+            file.write("\nBest Position: {}\nBest Performance: {}%".
                        format(self.melhor_pos_geral, self.melhor_perf_geral))
