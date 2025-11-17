@@ -33,7 +33,7 @@ class PSO:
         self.tam_enxame = tam_enxame
         self.num_interacoes = num_interacoes
         self.algoritmo = definirAlgoritmo(tipo_algoritmo)
-        self.dataframe = read_parquet(endereco_parquet).head(10000)
+        self.dataframe = read_parquet(endereco_parquet)
         self.metrica = metrica
 
         self.melhor_pos_geral = None
