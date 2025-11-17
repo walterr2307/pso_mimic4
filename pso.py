@@ -4,17 +4,23 @@ from pandas import read_parquet
 from particula import Particula
 
 from logistic_regression import LR
+from lgbm import LGBM
 from knn import KNN
 from rfc import RFC
+from xgb import XGB
 
 
 def definirAlgoritmo(tipo_algoritmo):
     if tipo_algoritmo == "KNeighborsClassifier":
         return KNN()
-    elif tipo_algoritmo == "RandomForestClassifier":
+    if tipo_algoritmo == "RandomForestClassifier":
         return RFC()
-    elif tipo_algoritmo == "LogisticRegression":
+    if tipo_algoritmo == "LogisticRegression":
         return LR()
+    if tipo_algoritmo == "XGBClassifier":
+        return XGB()
+    if tipo_algoritmo == "LGBMClassifier":
+        return LGBM()
 
     return None
 
