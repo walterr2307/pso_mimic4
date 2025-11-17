@@ -8,6 +8,7 @@ from lgbm import LGBM
 from knn import KNN
 from rfc import RFC
 from xgb import XGB
+from cbc import CBC
 
 
 def definirAlgoritmo(tipo_algoritmo):
@@ -21,6 +22,8 @@ def definirAlgoritmo(tipo_algoritmo):
         return XGB()
     if tipo_algoritmo == "LGBMClassifier":
         return LGBM()
+    if tipo_algoritmo == "CatBoostClassifier":
+        return CBC()
 
     return None
 
