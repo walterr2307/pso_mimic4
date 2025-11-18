@@ -1,7 +1,8 @@
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
-from pandas import read_parquet
+from pandas import concat
 from particula import Particula
+from copy import deepcopy
 
 from logistic_regression import LR
 from lgbm import LGBM
@@ -9,6 +10,8 @@ from knn import KNN
 from rfc import RFC
 from xgb import XGB
 from cbc import CBC
+
+import pyarrow.parquet as pq
 
 
 def definirAlgoritmo(tipo_algoritmo):
@@ -28,23 +31,77 @@ def definirAlgoritmo(tipo_algoritmo):
     return None
 
 
+def lerEmBlocos(endereco_parquet, tamanho_bloco):
+    table = pq.ParquetFile(endereco_parquet)
+    dfs = []
+
+    buffer = []
+    total_no_buffer = 0
+
+    for i in range(table.num_row_groups):
+        df_chunk = table.read_row_group(i).to_pandas()
+
+        while len(df_chunk) > 0:
+            faltam = tamanho_bloco - total_no_buffer
+
+            if len(df_chunk) <= faltam:
+                buffer.append(df_chunk)
+                total_no_buffer += len(df_chunk)
+                break
+
+            buffer.append(df_chunk.iloc[:faltam])
+            dfs.append(concat(buffer, ignore_index=True))
+
+            df_chunk = df_chunk.iloc[faltam:]
+            buffer = []
+            total_no_buffer = 0
+
+    if buffer:
+        dfs.append(concat(buffer, ignore_index=True))
+
+    return dfs
+
+
 class PSO:
     def __init__(self, tam_enxame, num_interacoes, tipo_algoritmo, endereco_parquet):
         self.tam_enxame = tam_enxame
         self.num_interacoes = num_interacoes
         self.algoritmo = definirAlgoritmo(tipo_algoritmo)
-        self.dataframe = read_parquet(endereco_parquet).sample(n=10000)
 
+        self.x_treinamento = None
+        self.y_treinamento = None
+        self.x_teste = None
+        self.y_teste = None
+
+        self.dataframe = None
+        self.melhor_particula_geral = None
         self.melhor_pos_geral = None
         self.melhor_perf_geral = 0
+        self.num_interacao = 1
 
-        self.x_treinamento, self.x_teste, self.y_treinamento, self.y_teste = self.definirXY()
+        self.comecarLoopPrincipal(endereco_parquet)
 
     def definirXY(self):
         x = self.dataframe.iloc[:, :-1].values
         y = self.dataframe.iloc[:, -1].values
 
         return train_test_split(x, y, test_size=0.3)
+
+    def comecarLoopPrincipal(self, endereco_parquet):
+        blocos = lerEmBlocos(endereco_parquet, tamanho_bloco=10_000)
+        enxame = None
+
+        with open(str(self.algoritmo) + ".txt", "w") as file:
+            for bloco in blocos:
+                self.dataframe = bloco
+                self.x_treinamento, self.x_teste, self.y_treinamento, self.y_teste = self.definirXY()
+
+                if enxame is None:
+                    enxame = self.gerarEnxame()
+
+                self.escreverInteracoes(file, enxame)
+
+            file.write("\nMelhor: {}".format(self.melhor_particula_geral))
 
     def ajustarMetricas(self, particula):
         modelo = self.algoritmo.gerarModelo(particula.pos)
@@ -62,9 +119,11 @@ class PSO:
         if performance > particula.melhor_perf:
             particula.melhor_perf = performance
             particula.melhor_pos = list(particula.pos)
-        if particula.melhor_perf > self.melhor_perf_geral:
-            self.melhor_perf_geral = particula.melhor_perf
-            self.melhor_pos_geral = list(particula.melhor_pos)
+
+        if performance > self.melhor_perf_geral:
+            self.melhor_perf_geral = performance
+            self.melhor_pos_geral = list(particula.pos)
+            self.melhor_particula_geral = deepcopy(particula)
 
     def gerarEnxame(self):
         enxame = []
@@ -83,26 +142,18 @@ class PSO:
 
         self.ajustarMelhoresPosicoes(particula)
 
-    def escreverPrimeiraInteracao(self, file, enxame):
-        file.write(str(self.algoritmo) + "\n\n1* Interation:\n")
-
-        for i in range(self.tam_enxame):
-            file.write(str(enxame[i]) + "\n")
-
-    def escreverDemaisInteracoes(self, file, enxame):
-        for num_interacao in range(1, self.num_interacoes):
-            file.write("\n{}* Interation:\n".format(num_interacao + 1))
+    def escreverInteracoes(self, file, enxame):
+        for _ in range(self.num_interacoes):
+            file.write("\n{}* Interacao:\n".format(self.num_interacao))
+            print(str(self.num_interacao) + "* Interacao:\n")
 
             for i in range(self.tam_enxame):
-                self.mover(enxame[i])
+                if self.num_interacao > 1:
+                    self.mover(enxame[i])
+
+                print(str(enxame[i]))
                 file.write(str(enxame[i]) + "\n")
 
-    def executar(self):
-        enxame = self.gerarEnxame()
+            print('\nMelhor: ' + str(self.melhor_particula_geral) + '\n\n')
 
-        with open(str(self.algoritmo) + ".txt", "w") as file:
-            self.escreverPrimeiraInteracao(file, enxame)
-            self.escreverDemaisInteracoes(file, enxame)
-
-            file.write("\nBest Position: {}\nBest Performance: {}%".
-                       format(self.melhor_pos_geral, self.melhor_perf_geral))
+            self.num_interacao += 1
