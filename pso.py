@@ -29,12 +29,11 @@ def definirAlgoritmo(tipo_algoritmo):
 
 
 class PSO:
-    def __init__(self, tam_enxame, num_interacoes, tipo_algoritmo, endereco_parquet, metrica):
+    def __init__(self, tam_enxame, num_interacoes, tipo_algoritmo, endereco_parquet):
         self.tam_enxame = tam_enxame
         self.num_interacoes = num_interacoes
         self.algoritmo = definirAlgoritmo(tipo_algoritmo)
-        self.dataframe = read_parquet(endereco_parquet)
-        self.metrica = metrica
+        self.dataframe = read_parquet(endereco_parquet).sample(n=10000)
 
         self.melhor_pos_geral = None
         self.melhor_perf_geral = 0
@@ -58,13 +57,7 @@ class PSO:
 
     def ajustarMelhoresPosicoes(self, particula):
         self.ajustarMetricas(particula)
-
-        if self.metrica == "acuracia":
-            performance = particula.acuracia
-        elif self.metrica == "precisao":
-            performance = particula.precisao
-        else:
-            performance = particula.recall
+        performance = particula.retornarPerformance()
 
         if performance > particula.melhor_perf:
             particula.melhor_perf = performance

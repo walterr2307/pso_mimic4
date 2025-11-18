@@ -33,3 +33,6 @@ class Particula:
         vel = vel * self.w + r1 * self.c1 * (melhor_pos - pos) + r2 * self.c2 * (melhor_pos_geral - pos)
 
         return list(pos + vel), list(vel)
+
+    def retornarPerformance(self):
+        return round((self.acuracia + self.precisao + self.recall) / 3, 1)

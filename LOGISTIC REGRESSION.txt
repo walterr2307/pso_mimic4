@@ -1,124 +1,124 @@
 LOGISTIC REGRESSION
 
 1* Interation:
-Posicao: [5.5271, 331, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [5.9277, 163, 1, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [6.0743, 440, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [8.7362, 346, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [2.3399, 400, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.2548, 143, 0, 1] -> Acuracia: 82.9%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.149, 471, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [7.4723, 318, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [2.3338, 317, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [8.2478, 373, 0, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
+Posicao: [9.2338, 465, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.1334, 219, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [6.6851, 116, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [7.9, 361, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [7.2931, 259, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [8.5802, 368, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [7.5942, 316, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [3.8771, 151, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [5.8776, 165, 0, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [5.2541, 353, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
 
 2* Interation:
-Posicao: [6.0362, 409, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [6.4297, 239, 1, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [5.9466, 397, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [10, 400, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [1.5426, 467, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 113, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 500, 1, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [4.6703, 241, 1, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 292, 1, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [9.8947, 440, 0, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
+Posicao: [10, 500, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.2512, 190, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [3.9329, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [7.5341, 318, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [8.0764, 250, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [10, 465, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [7.7732, 292, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [2.8884, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.7%, Recall: 8.3%
+Posicao: [6.56, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [5.0558, 384, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
 
 3* Interation:
-Posicao: [1.9365, 202, 1, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [5.7062, 244, 1, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [9.8281, 394, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [1.2762, 475, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 500, 1, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 115, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [2.9563, 216, 0, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
+Posicao: [10, 500, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.2225, 190, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [2.2573, 136, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.3%
+Posicao: [6.9857, 277, 1, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [6.325, 201, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [9.4701, 365, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [6.6592, 243, 1, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [3.1657, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [5.6175, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.8403, 332, 1, 1] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.9%
 
 4* Interation:
-Posicao: [0.01, 100, 1, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [1.7643, 145, 1, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [9.3263, 377, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [2.142, 399, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 110, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 475, 1, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
+Posicao: [9.3815, 462, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.1134, 212, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [3.7236, 184, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [4.6464, 171, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.965, 167, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [7.8991, 254, 1, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [3.1084, 117, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [4.4796, 161, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.6394, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.8971, 274, 1, 1] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.9%
 
 5* Interation:
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 1, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [7.6803, 325, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [2.6357, 328, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 120, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 413, 1, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
+Posicao: [8.2988, 402, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.0332, 243, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.4558, 184, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [3.336, 112, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [4.8463, 180, 1, 1] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.9%
+Posicao: [6.7083, 249, 1, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [1.1825, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.9%
+Posicao: [3.903, 186, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [5.5414, 109, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.8253, 223, 1, 1] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.9%
 
 6* Interation:
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [6.8037, 296, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [2.2579, 380, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 118, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 336, 1, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
+Posicao: [7.5896, 367, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [4.9999, 257, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.0304, 155, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [2.6275, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.7%, Recall: 8.3%
+Posicao: [4.4846, 178, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [5.2374, 230, 1, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [1.0848, 100, 0, 0] -> Acuracia: 84.6%, Precisao: 47.9%, Recall: 7.6%
+Posicao: [3.3622, 163, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [6.1495, 129, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [5.113, 355, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
 
 7* Interation:
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [5.5143, 258, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [2.0765, 424, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 108, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 349, 1, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 125, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
+Posicao: [7.4685, 364, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [4.97, 266, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [2.9262, 124, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [2.4554, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 50.0%, Recall: 8.5%
+Posicao: [3.7003, 152, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [3.2277, 174, 1, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.3943, 111, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [2.7721, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.7%, Recall: 8.3%
+Posicao: [3.7654, 102, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.9051, 430, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
 
 8* Interation:
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [4.755, 236, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [1.4499, 347, 0, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 108, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 427, 1, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 139, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
+Posicao: [6.9148, 338, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.0584, 226, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [1.9342, 103, 0, 0] -> Acuracia: 84.6%, Precisao: 48.0%, Recall: 7.9%
+Posicao: [2.3519, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.3%
+Posicao: [2.2934, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.3%
+Posicao: [3.3105, 151, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [5.2421, 113, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [2.292, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.3%
+Posicao: [4.5936, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [4.9749, 380, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
 
 9* Interation:
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [4.7312, 235, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [1.4834, 272, 0, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 116, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 500, 1, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 145, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
+Posicao: [6.5828, 323, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.1148, 187, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [1.9885, 100, 0, 0] -> Acuracia: 84.6%, Precisao: 48.0%, Recall: 7.9%
+Posicao: [2.3045, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.3%
+Posicao: [1.7584, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.9%
+Posicao: [3.3018, 126, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [4.7309, 113, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [3.3158, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [6.5187, 100, 0, 0] -> Acuracia: 84.6%, Precisao: 48.1%, Recall: 8.5%
+Posicao: [4.8041, 211, 1, 1] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.9%
 
 10* Interation:
-Posicao: [0.01, 100, 1, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 1, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [4.7655, 237, 1, 0] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [1.4032, 240, 0, 1] -> Acuracia: 82.8%, Precisao: 83.1%, Recall: 98.5%
-Posicao: [0.01, 117, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 443, 0, 0] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 100, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 143, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
-Posicao: [0.01, 101, 0, 1] -> Acuracia: 79.6%, Precisao: 79.6%, Recall: 100.0%
+Posicao: [6.22, 305, 1, 1] -> Acuracia: 84.7%, Precisao: 49.3%, Recall: 8.1%
+Posicao: [5.1806, 188, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [2.3425, 101, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.3%
+Posicao: [2.3709, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 50.0%, Recall: 8.5%
+Posicao: [2.8977, 109, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [3.2115, 101, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [3.4046, 109, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [3.9423, 142, 0, 0] -> Acuracia: 84.7%, Precisao: 48.8%, Recall: 8.5%
+Posicao: [3.8854, 100, 0, 0] -> Acuracia: 84.7%, Precisao: 49.4%, Recall: 8.5%
+Posicao: [3.8624, 100, 1, 1] -> Acuracia: 84.7%, Precisao: 48.6%, Recall: 7.4%
 
-Best Position: [0.01, 113, 0, 1]
-Best Performance: 100.0%
+Best Position: [2.4554, 100, 0, 0]
+Best Performance: 50.0%
