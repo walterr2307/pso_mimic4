@@ -1,7 +1,9 @@
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
-from pandas import concat
+from sklearn.preprocessing import MinMaxScaler
+from pyarrow.parquet import ParquetFile
 from particula import Particula
+from pandas import concat
 from copy import deepcopy
 
 from logistic_regression import LR
@@ -10,8 +12,6 @@ from knn import KNN
 from rfc import RFC
 from xgb import XGB
 from cbc import CBC
-
-import pyarrow.parquet as pq
 
 
 def definirAlgoritmo(tipo_algoritmo):
@@ -32,7 +32,7 @@ def definirAlgoritmo(tipo_algoritmo):
 
 
 def lerEmBlocos(endereco_parquet, tamanho_bloco):
-    table = pq.ParquetFile(endereco_parquet)
+    table = ParquetFile(endereco_parquet)
     dfs = []
 
     buffer = []
@@ -70,6 +70,8 @@ class PSO:
 
         self.x_treinamento = None
         self.y_treinamento = None
+        self.x_validacao = None
+        self.y_validacao = None
         self.x_teste = None
         self.y_teste = None
 
@@ -84,8 +86,26 @@ class PSO:
     def definirXY(self):
         x = self.dataframe.iloc[:, :-1].values
         y = self.dataframe.iloc[:, -1].values
+        scaler = MinMaxScaler()
 
-        return train_test_split(x, y, test_size=0.3)
+        x_train, x_rest, y_train, y_rest = train_test_split(
+            x, y, test_size=0.3, random_state=42, stratify=y
+        )
+
+        x_val, x_test, y_val, y_test = train_test_split(
+            x_rest, y_rest, test_size=0.5, random_state=42, stratify=y_rest
+        )
+
+        x_train = scaler.fit_transform(x_train)
+        x_val = scaler.transform(x_val)
+        x_test = scaler.transform(x_test)
+
+        self.x_treinamento = x_train
+        self.y_treinamento = y_train
+        self.x_validacao = x_val
+        self.y_validacao = y_val
+        self.x_teste = x_test
+        self.y_teste = y_test
 
     def comecarLoopPrincipal(self, endereco_parquet):
         blocos = lerEmBlocos(endereco_parquet, tamanho_bloco=10_000)
@@ -94,23 +114,23 @@ class PSO:
         with open(str(self.algoritmo) + ".txt", "w") as file:
             for bloco in blocos:
                 self.dataframe = bloco
-                self.x_treinamento, self.x_teste, self.y_treinamento, self.y_teste = self.definirXY()
+                self.definirXY()
 
                 if enxame is None:
                     enxame = self.gerarEnxame()
 
                 self.escreverInteracoes(file, enxame)
 
-            file.write("\nMelhor: {}".format(self.melhor_particula_geral))
+            self.avaliarMelhorNoTeste(file)
 
     def ajustarMetricas(self, particula):
         modelo = self.algoritmo.gerarModelo(particula.pos)
         modelo.fit(self.x_treinamento, self.y_treinamento)
-        previsoes = modelo.predict(self.x_teste)
+        previsoes = modelo.predict(self.x_validacao)
 
-        particula.acuracia = round(accuracy_score(self.y_teste, previsoes) * 100, 1)
-        particula.precisao = round(precision_score(self.y_teste, previsoes) * 100, 1)
-        particula.recall = round(recall_score(self.y_teste, previsoes) * 100, 1)
+        particula.acuracia = round(accuracy_score(self.y_validacao, previsoes) * 100, 1)
+        particula.precisao = round(precision_score(self.y_validacao, previsoes, zero_division=0) * 100, 1)
+        particula.recall = round(recall_score(self.y_validacao, previsoes, zero_division=0) * 100, 1)
 
     def ajustarMelhoresPosicoes(self, particula):
         self.ajustarMetricas(particula)
@@ -142,6 +162,18 @@ class PSO:
 
         self.ajustarMelhoresPosicoes(particula)
 
+    def avaliarMelhorNoTeste(self, file):
+        modelo = self.algoritmo.gerarModelo(self.melhor_pos_geral)
+        modelo.fit(self.x_treinamento, self.y_treinamento)
+        previsoes = modelo.predict(self.x_teste)
+
+        acuracia = round(accuracy_score(self.y_teste, previsoes) * 100, 1)
+        precisao = round(precision_score(self.y_teste, previsoes, zero_division=0) * 100, 1)
+        recall = round(recall_score(self.y_teste, previsoes, zero_division=0) * 100, 1)
+
+        print("Performance no teste: {}%, {}%, {}%".format(acuracia, precisao, recall))
+        file.write("Performance no teste: {}%, {}%, {}%".format(acuracia, precisao, recall))
+
     def escreverInteracoes(self, file, enxame):
         for _ in range(self.num_interacoes):
             file.write("\n{}* Interacao:\n".format(self.num_interacao))
@@ -154,6 +186,7 @@ class PSO:
                 print(str(enxame[i]))
                 file.write(str(enxame[i]) + "\n")
 
+            file.write("\nMelhor: {}\n\n".format(self.melhor_particula_geral))
             print('\nMelhor: ' + str(self.melhor_particula_geral) + '\n\n')
 
             self.num_interacao += 1

@@ -5,3 +5,4 @@ lista = ["KNeighborsClassifier", "RandomForestClassifier", "LogisticRegression",
 
 for item in lista:
     pso = PSO(10, 1, item, 'Mimic IV.parquet')
+
