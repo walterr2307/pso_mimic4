@@ -96,19 +96,15 @@ class PSO:
             x_rest, y_rest, test_size=0.5, random_state=42, stratify=y_rest
         )
 
-        x_train = scaler.fit_transform(x_train)
-        x_val = scaler.transform(x_val)
-        x_test = scaler.transform(x_test)
-
-        self.x_treinamento = x_train
+        self.x_treinamento = scaler.fit_transform(x_train)
         self.y_treinamento = y_train
-        self.x_validacao = x_val
+        self.x_validacao = scaler.transform(x_val)
         self.y_validacao = y_val
-        self.x_teste = x_test
+        self.x_teste = scaler.transform(x_test)
         self.y_teste = y_test
 
     def comecarLoopPrincipal(self, endereco_parquet):
-        blocos = lerEmBlocos(endereco_parquet, tamanho_bloco=10_000)
+        blocos = lerEmBlocos(endereco_parquet, tamanho_bloco=30000)
         enxame = None
 
         with open(str(self.algoritmo) + ".txt", "w") as file:
@@ -171,22 +167,17 @@ class PSO:
         precisao = round(precision_score(self.y_teste, previsoes, zero_division=0) * 100, 1)
         recall = round(recall_score(self.y_teste, previsoes, zero_division=0) * 100, 1)
 
-        print("Performance no teste: {}%, {}%, {}%".format(acuracia, precisao, recall))
         file.write("Performance no teste: {}%, {}%, {}%".format(acuracia, precisao, recall))
 
     def escreverInteracoes(self, file, enxame):
         for _ in range(self.num_interacoes):
             file.write("\n{}* Interacao:\n".format(self.num_interacao))
-            print(str(self.num_interacao) + "* Interacao:\n")
 
             for i in range(self.tam_enxame):
                 if self.num_interacao > 1:
                     self.mover(enxame[i])
 
-                print(str(enxame[i]))
                 file.write(str(enxame[i]) + "\n")
 
             file.write("\nMelhor: {}\n\n".format(self.melhor_particula_geral))
-            print('\nMelhor: ' + str(self.melhor_particula_geral) + '\n\n')
-
             self.num_interacao += 1
