@@ -37,4 +37,4 @@ class Particula:
         return list(pos + vel), list(vel)
 
     def retornarPerformance(self):
-        return round((self.acuracia + self.precisao + self.recall) / 3, 1)
+        return round((self.acuracia + 2 * self.precisao + 4 * self.recall) / 7, 1)

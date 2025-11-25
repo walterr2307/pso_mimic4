@@ -1,421 +1,142 @@
-
 1* Interacao:
-Posicao: [1689, 0.2528, 60, 6, 0.8114, 0.7639, 31, 4.3224, 4.0122] -> Acuracia: 99.3%, Precisao: 98.8%, Recall: 96.0%, Performance: 98.0%
-Posicao: [1156, 0.0405, 113, 12, 0.8883, 0.8987, 20, 0.2865, 4.0375] -> Acuracia: 99.2%, Precisao: 99.3%, Recall: 95.2%, Performance: 97.9%
-Posicao: [988, 0.0837, 102, 4, 0.7306, 0.624, 45, 1.8487, 0.4197] -> Acuracia: 99.2%, Precisao: 98.7%, Recall: 95.6%, Performance: 97.8%
-Posicao: [1348, 0.186, 70, 11, 0.8124, 0.8479, 23, 2.0892, 2.0628] -> Acuracia: 99.4%, Precisao: 99.5%, Recall: 96.4%, Performance: 98.4%
-Posicao: [156, 0.2264, 72, 12, 0.8963, 0.8837, 11, 0.6401, 3.8219] -> Acuracia: 99.4%, Precisao: 99.5%, Recall: 96.0%, Performance: 98.3%
-Posicao: [1738, 0.0673, 57, 13, 0.591, 0.5889, 31, 1.3746, 3.2283] -> Acuracia: 99.4%, Precisao: 98.8%, Recall: 96.4%, Performance: 98.2%
-Posicao: [1803, 0.2817, 122, 9, 0.5695, 0.9707, 42, 0.5821, 3.0907] -> Acuracia: 99.2%, Precisao: 99.0%, Recall: 95.3%, Performance: 97.8%
-Posicao: [496, 0.1589, 19, 9, 0.6304, 0.5066, 19, 1.1384, 2.8316] -> Acuracia: 99.4%, Precisao: 99.2%, Recall: 96.6%, Performance: 98.4%
-Posicao: [154, 0.1285, 31, 11, 0.5876, 0.8653, 13, 4.4317, 0.1205] -> Acuracia: 99.1%, Precisao: 99.1%, Recall: 94.0%, Performance: 97.4%
-Posicao: [1093, 0.0738, 40, 15, 0.6284, 0.8454, 12, 2.9287, 2.9817] -> Acuracia: 99.4%, Precisao: 99.3%, Recall: 96.3%, Performance: 98.3%
+Posicao: [912, 0.2855, 55, 4, 0.6189, 0.5057, 23, 2.0948, 1.809] -> Acuracia: 73.9%, Precisao: 63.2%, Recall: 60.0%, Performance: 62.9%
+Posicao: [941, 0.1906, 71, 8, 0.6869, 0.5714, 46, 1.9778, 0.9954] -> Acuracia: 73.0%, Precisao: 61.0%, Recall: 62.5%, Performance: 63.6%
+Posicao: [315, 0.1074, 99, 13, 0.9272, 0.6354, 32, 1.2223, 2.2419] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [1504, 0.2445, 58, 14, 0.7141, 0.773, 45, 2.2434, 2.3636] -> Acuracia: 77.4%, Precisao: 68.4%, Recall: 65.0%, Performance: 67.7%
+Posicao: [649, 0.292, 21, 15, 0.8952, 0.8736, 29, 2.021, 3.3993] -> Acuracia: 76.5%, Precisao: 66.7%, Recall: 65.0%, Performance: 67.1%
+Posicao: [1982, 0.2726, 100, 15, 0.9876, 0.6305, 42, 1.6425, 4.3311] -> Acuracia: 76.5%, Precisao: 68.6%, Recall: 60.0%, Performance: 64.8%
+Posicao: [377, 0.0249, 128, 3, 0.6116, 0.6831, 37, 4.6447, 0.3116] -> Acuracia: 74.8%, Precisao: 65.7%, Recall: 57.5%, Performance: 62.3%
+Posicao: [1568, 0.2806, 89, 5, 0.7825, 0.7557, 34, 2.1125, 2.9717] -> Acuracia: 75.7%, Precisao: 65.8%, Recall: 62.5%, Performance: 65.3%
+Posicao: [1415, 0.2903, 42, 14, 0.8293, 0.8261, 34, 2.8514, 0.2691] -> Acuracia: 75.7%, Precisao: 65.8%, Recall: 62.5%, Performance: 65.3%
+Posicao: [1641, 0.1274, 95, 10, 0.5892, 0.6803, 25, 4.5693, 2.4112] -> Acuracia: 76.5%, Precisao: 67.6%, Recall: 62.5%, Performance: 66.0%
 
-Melhor: Posicao: [1348, 0.186, 70, 11, 0.8124, 0.8479, 23, 2.0892, 2.0628] -> Acuracia: 99.4%, Precisao: 99.5%, Recall: 96.4%, Performance: 98.4%
-
+Melhor Posicao: [315, 0.1074, 99, 13, 0.9272, 0.6354, 32, 1.2223, 2.2419] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
 
 2* Interacao:
-Posicao: [1738, 0.3, 73, 13, 1, 1, 23, 2.7533, 2.6295] -> Acuracia: 99.3%, Precisao: 100.0%, Recall: 94.8%, Performance: 98.0%
-Posicao: [1344, 0.1358, 122, 15, 1, 1, 18, 0.1261, 4.3104] -> Acuracia: 98.8%, Precisao: 100.0%, Recall: 91.6%, Performance: 96.8%
-Posicao: [1023, 0.144, 120, 3, 1, 1, 50, 1.7889, 0] -> Acuracia: 99.2%, Precisao: 99.7%, Recall: 94.2%, Performance: 97.7%
-Posicao: [1553, 0.2954, 74, 13, 1, 1, 22, 2.1417, 2.0998] -> Acuracia: 99.3%, Precisao: 99.8%, Recall: 95.0%, Performance: 98.0%
-Posicao: [888, 0.3, 76, 15, 1, 1, 14, 1.2435, 3.2364] -> Acuracia: 99.0%, Precisao: 99.7%, Recall: 92.9%, Performance: 97.2%
-Posicao: [2000, 0.1434, 58, 15, 0.9856, 0.9949, 32, 1.2735, 3.5063] -> Acuracia: 99.2%, Precisao: 99.8%, Recall: 94.2%, Performance: 97.7%
-Posicao: [2000, 0.3, 128, 11, 1, 1, 50, 0, 3.6472] -> Acuracia: 99.1%, Precisao: 99.8%, Recall: 93.7%, Performance: 97.5%
-Posicao: [100, 0.2935, 16, 11, 1, 0.938, 14, 0.418, 3.5282] -> Acuracia: 98.5%, Precisao: 99.3%, Recall: 89.5%, Performance: 95.8%
-Posicao: [573, 0.3, 39, 15, 1, 1, 12, 4.3736, 0.3041] -> Acuracia: 99.7%, Precisao: 99.8%, Recall: 98.2%, Performance: 99.2%
-Posicao: [778, 0.2981, 21, 15, 1, 1, 5, 4.71, 1.741] -> Acuracia: 99.4%, Precisao: 99.7%, Recall: 96.1%, Performance: 98.4%
+Posicao: [718, 0.3, 50, 3, 0.5736, 0.5, 22, 1.6655, 1.3814] -> Acuracia: 73.0%, Precisao: 61.5%, Recall: 60.0%, Performance: 62.3%
+Posicao: [489, 0.1749, 86, 10, 0.7674, 0.5, 50, 1.0854, 0.3689] -> Acuracia: 74.8%, Precisao: 63.4%, Recall: 65.0%, Performance: 65.9%
+Posicao: [100, 0.0775, 116, 15, 1, 0.5633, 35, 0.4187, 2.0796] -> Acuracia: 76.5%, Precisao: 66.7%, Recall: 65.0%, Performance: 67.1%
+Posicao: [1202, 0.2284, 69, 15, 0.7912, 0.7231, 48, 1.6571, 2.2402] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [290, 0.3, 18, 15, 0.9937, 0.8638, 31, 1.4516, 3.5308] -> Acuracia: 78.3%, Precisao: 70.3%, Recall: 65.0%, Performance: 68.4%
+Posicao: [2000, 0.3, 122, 15, 1, 0.5381, 50, 0.8005, 4.9575] -> Acuracia: 73.0%, Precisao: 61.5%, Recall: 60.0%, Performance: 62.3%
+Posicao: [100, 0.01, 128, 3, 0.5017, 0.6278, 45, 5, 0.0] -> Acuracia: 72.2%, Precisao: 72.2%, Recall: 32.5%, Performance: 49.5%
+Posicao: [438, 0.1539, 110, 12, 0.9635, 0.6231, 36, 0.8964, 2.4065] -> Acuracia: 76.5%, Precisao: 66.7%, Recall: 65.0%, Performance: 67.1%
+Posicao: [1560, 0.3, 28, 15, 0.8783, 0.8583, 38, 2.9609, 0.0] -> Acuracia: 75.7%, Precisao: 65.0%, Recall: 65.0%, Performance: 66.5%
+Posicao: [1342, 0.1033, 109, 12, 0.66, 0.6221, 27, 4.1238, 2.285] -> Acuracia: 75.7%, Precisao: 65.8%, Recall: 62.5%, Performance: 65.3%
 
-Melhor: Posicao: [573, 0.3, 39, 15, 1, 1, 12, 4.3736, 0.3041] -> Acuracia: 99.7%, Precisao: 99.8%, Recall: 98.2%, Performance: 99.2%
-
+Melhor Posicao: [315, 0.1074, 99, 13, 0.9272, 0.6354, 32, 1.2223, 2.2419] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
 
 3* Interacao:
-Posicao: [1620, 0.3, 74, 15, 1, 1, 19, 2.3403, 1.8259] -> Acuracia: 99.3%, Precisao: 100.0%, Recall: 95.2%, Performance: 98.2%
-Posicao: [1282, 0.1943, 111, 15, 1, 1, 17, 0.7605, 3.7527] -> Acuracia: 99.2%, Precisao: 100.0%, Recall: 94.6%, Performance: 97.9%
-Posicao: [575, 0.3, 44, 15, 1, 1, 15, 4.4191, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.3%, Performance: 99.4%
-Posicao: [1217, 0.3, 63, 15, 1, 1, 19, 3.135, 1.2182] -> Acuracia: 99.5%, Precisao: 100.0%, Recall: 96.5%, Performance: 98.7%
-Posicao: [1098, 0.3, 43, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.3%, Performance: 99.4%
-Posicao: [957, 0.3, 47, 15, 1, 1, 18, 3.8175, 0.7505] -> Acuracia: 99.5%, Precisao: 99.8%, Recall: 96.8%, Performance: 98.7%
-Posicao: [1350, 0.3, 92, 15, 1, 1, 29, 2.732, 1.3645] -> Acuracia: 99.5%, Precisao: 100.0%, Recall: 96.2%, Performance: 98.6%
-Posicao: [160, 0.3, 16, 14, 1, 1, 12, 2.1513, 2.0247] -> Acuracia: 99.4%, Precisao: 99.7%, Recall: 95.7%, Performance: 98.3%
-Posicao: [990, 0.3, 53, 15, 1, 1, 14, 4.3722, 0.111] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.5%, Performance: 99.0%
-Posicao: [363, 0.3, 26, 15, 1, 1, 6, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.6%, Performance: 99.4%
+Posicao: [530, 0.3, 58, 4, 0.6283, 0.5, 23, 1.3485, 1.3524] -> Acuracia: 74.8%, Precisao: 64.9%, Recall: 60.0%, Performance: 63.5%
+Posicao: [100, 0.0712, 117, 15, 1, 0.5719, 34, 0.476, 2.305] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [176, 0.1097, 98, 13, 0.9458, 0.6411, 32, 1.2858, 2.2547] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [393, 0.1307, 97, 15, 0.9308, 0.633, 38, 1.039, 2.1791] -> Acuracia: 76.5%, Precisao: 66.7%, Recall: 65.0%, Performance: 67.1%
+Posicao: [100, 0.1951, 65, 15, 1, 0.7213, 33, 0.9726, 2.8387] -> Acuracia: 75.7%, Precisao: 65.0%, Recall: 65.0%, Performance: 66.5%
+Posicao: [1441, 0.2504, 128, 15, 1, 0.5027, 49, 0.3064, 4.4358] -> Acuracia: 73.9%, Precisao: 63.2%, Recall: 60.0%, Performance: 62.9%
+Posicao: [100, 0.01, 128, 3, 0.52, 0.621, 45, 5, 0.0] -> Acuracia: 72.2%, Precisao: 72.2%, Recall: 32.5%, Performance: 49.5%
+Posicao: [100, 0.0451, 112, 15, 1, 0.561, 33, 0.5082, 1.9574] -> Acuracia: 75.7%, Precisao: 68.8%, Recall: 55.0%, Performance: 61.9%
+Posicao: [412, 0.1462, 90, 15, 0.9537, 0.6562, 34, 1.3064, 1.5844] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
+Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
-Melhor: Posicao: [575, 0.3, 44, 15, 1, 1, 15, 4.4191, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.3%, Performance: 99.4%
-
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 4* Interacao:
-Posicao: [100, 0.3, 24, 15, 1, 1, 9, 5, 0] -> Acuracia: 98.7%, Precisao: 99.4%, Recall: 92.5%, Performance: 96.9%
-Posicao: [854, 0.2433, 71, 15, 1, 1, 16, 2.8736, 1.5893] -> Acuracia: 99.3%, Precisao: 99.9%, Recall: 95.7%, Performance: 98.3%
-Posicao: [316, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 99.5%, Precisao: 99.9%, Recall: 96.7%, Performance: 98.7%
-Posicao: [109, 0.3, 29, 15, 1, 1, 11, 5, 0] -> Acuracia: 99.1%, Precisao: 99.5%, Recall: 94.4%, Performance: 97.7%
-Posicao: [944, 0.3, 16, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.7%, Performance: 99.1%
-Posicao: [327, 0.3, 40, 15, 1, 1, 10, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.6%, Performance: 99.1%
-Posicao: [544, 0.3, 46, 15, 1, 1, 7, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.3%, Performance: 99.0%
-Posicao: [404, 0.3, 16, 15, 1, 1, 13, 4.3919, 0.052] -> Acuracia: 99.5%, Precisao: 99.9%, Recall: 96.9%, Performance: 98.8%
-Posicao: [673, 0.3, 47, 15, 1, 1, 16, 4.4158, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.6%, Performance: 99.1%
-Posicao: [240, 0.3, 46, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.5%, Precisao: 100.0%, Recall: 96.9%, Performance: 98.8%
+Posicao: [506, 0.01, 128, 15, 1, 0.672, 42, 2.2802, 2.0462] -> Acuracia: 76.5%, Precisao: 68.6%, Recall: 60.0%, Performance: 64.8%
+Posicao: [100, 0.01, 128, 15, 1, 0.6615, 19, 0.6346, 3.7672] -> Acuracia: 73.9%, Precisao: 72.7%, Recall: 40.0%, Performance: 54.2%
+Posicao: [870, 0.1534, 90, 15, 0.8243, 0.6693, 31, 2.853, 1.6233] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [496, 0.1105, 105, 15, 0.9051, 0.6135, 31, 2.0354, 1.6807] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [471, 0.0779, 121, 15, 0.9053, 0.5625, 34, 1.7157, 1.461] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [1153, 0.1974, 110, 15, 1, 0.5844, 41, 1.1476, 3.3536] -> Acuracia: 77.4%, Precisao: 68.4%, Recall: 65.0%, Performance: 67.7%
+Posicao: [404, 0.01, 128, 3, 0.7043, 0.7274, 31, 5, 0.0] -> Acuracia: 73.9%, Precisao: 64.7%, Recall: 55.0%, Performance: 60.5%
+Posicao: [349, 0.106, 99, 15, 0.9032, 0.6192, 32, 2.0722, 1.6008] -> Acuracia: 75.7%, Precisao: 64.3%, Recall: 67.5%, Performance: 67.8%
+Posicao: [100, 0.0488, 128, 15, 0.9564, 0.5271, 31, 0.8094, 2.5632] -> Acuracia: 75.7%, Precisao: 68.8%, Recall: 55.0%, Performance: 61.9%
+Posicao: [190, 0.1383, 95, 15, 1, 0.6312, 36, 0.854, 1.4645] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
 
-Melhor: Posicao: [575, 0.3, 44, 15, 1, 1, 15, 4.4191, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.3%, Performance: 99.4%
-
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 5* Interacao:
-Posicao: [100, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 98.7%, Precisao: 99.7%, Recall: 91.4%, Performance: 96.6%
-Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-Posicao: [231, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.6%, Performance: 99.0%
-Posicao: [509, 0.3, 28, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-Posicao: [696, 0.3, 16, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-Posicao: [100, 0.3, 26, 15, 1, 1, 10, 5, 0] -> Acuracia: 99.4%, Precisao: 99.2%, Recall: 96.8%, Performance: 98.5%
-Posicao: [100, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 98.7%, Precisao: 99.7%, Recall: 91.4%, Performance: 96.6%
-Posicao: [610, 0.3, 18, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.9%, Precisao: 99.8%, Recall: 99.5%, Performance: 99.7%
-Posicao: [291, 0.3, 36, 15, 1, 1, 16, 4.4927, 0] -> Acuracia: 99.9%, Precisao: 99.8%, Recall: 99.5%, Performance: 99.7%
-Posicao: [349, 0.3, 35, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.4%, Performance: 99.8%
+Posicao: [613, 0.01, 128, 15, 1, 0.7322, 43, 2.5385, 2.1193] -> Acuracia: 78.3%, Precisao: 69.2%, Recall: 67.5%, Performance: 69.5%
+Posicao: [212, 0.1604, 102, 15, 1, 0.5475, 45, 1.6123, 0.6855] -> Acuracia: 76.5%, Precisao: 65.9%, Recall: 67.5%, Performance: 68.3%
+Posicao: [1023, 0.153, 95, 15, 0.8145, 0.6449, 33, 2.9623, 1.3564] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [563, 0.1028, 108, 15, 0.8896, 0.6059, 28, 2.5326, 1.44] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [723, 0.0193, 128, 15, 0.8446, 0.5, 34, 2.2298, 0.7045] -> Acuracia: 75.7%, Precisao: 65.8%, Recall: 62.5%, Performance: 65.3%
+Posicao: [647, 0.1201, 91, 15, 0.983, 0.6706, 30, 2.2328, 1.7028] -> Acuracia: 79.1%, Precisao: 70.0%, Recall: 70.0%, Performance: 71.3%
+Posicao: [629, 0.0114, 128, 3, 0.7486, 0.7543, 27, 4.4385, 0.2404] -> Acuracia: 74.8%, Precisao: 65.7%, Recall: 57.5%, Performance: 62.3%
+Posicao: [599, 0.1488, 92, 15, 0.8438, 0.6551, 32, 2.8914, 1.4761] -> Acuracia: 76.5%, Precisao: 65.9%, Recall: 67.5%, Performance: 68.3%
+Posicao: [913, 0.2092, 71, 15, 0.8411, 0.737, 35, 2.9813, 0.8906] -> Acuracia: 75.7%, Precisao: 65.8%, Recall: 62.5%, Performance: 65.3%
+Posicao: [615, 0.1254, 100, 15, 0.8898, 0.6278, 33, 2.0608, 1.7674] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
 
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 6* Interacao:
-Posicao: [633, 0.3, 49, 15, 1, 1, 21, 4.5703, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.3%, Performance: 99.4%
-Posicao: [130, 0.3, 16, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.0%, Precisao: 99.7%, Recall: 93.4%, Performance: 97.4%
-Posicao: [214, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 99.4%, Precisao: 100.0%, Recall: 96.0%, Performance: 98.5%
-Posicao: [652, 0.3, 27, 15, 1, 1, 19, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 98.1%, Performance: 99.3%
-Posicao: [434, 0.3, 17, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.7%, Performance: 98.9%
-Posicao: [178, 0.3, 20, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.3%, Precisao: 99.2%, Recall: 95.8%, Performance: 98.1%
-Posicao: [100, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 98.6%, Precisao: 99.7%, Recall: 90.3%, Performance: 96.2%
-Posicao: [707, 0.3, 23, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.5%, Performance: 99.4%
-Posicao: [100, 0.3, 18, 15, 1, 1, 15, 5, 0] -> Acuracia: 98.8%, Precisao: 99.7%, Recall: 91.7%, Performance: 96.7%
-Posicao: [433, 0.3, 27, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 99.8%, Recall: 97.8%, Performance: 99.1%
+Posicao: [682, 0.0117, 128, 15, 1, 0.7377, 40, 2.5272, 2.0384] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [844, 0.1219, 94, 15, 0.8813, 0.6192, 33, 1.7394, 1.8558] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [259, 0.1055, 104, 15, 0.9472, 0.6154, 33, 1.2506, 2.0574] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [550, 0.1185, 102, 15, 0.8962, 0.6209, 32, 2.0333, 1.7085] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
+Posicao: [701, 0.0958, 118, 15, 0.8624, 0.5846, 33, 2.2151, 1.3811] -> Acuracia: 76.5%, Precisao: 65.9%, Recall: 67.5%, Performance: 68.3%
+Posicao: [223, 0.0618, 80, 15, 0.9271, 0.7193, 23, 2.9815, 0.421] -> Acuracia: 78.3%, Precisao: 67.4%, Recall: 72.5%, Performance: 71.9%
+Posicao: [614, 0.0286, 128, 3, 0.6842, 0.7146, 32, 4.025, 0.5644] -> Acuracia: 75.7%, Precisao: 65.0%, Recall: 65.0%, Performance: 66.5%
+Posicao: [731, 0.1564, 94, 15, 0.8431, 0.6559, 33, 2.7156, 1.5991] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [594, 0.1686, 81, 15, 0.932, 0.6855, 35, 1.6785, 1.3472] -> Acuracia: 76.5%, Precisao: 65.9%, Recall: 67.5%, Performance: 68.3%
+Posicao: [812, 0.1194, 103, 15, 0.8303, 0.6262, 31, 2.6182, 1.9073] -> Acuracia: 76.5%, Precisao: 65.9%, Recall: 67.5%, Performance: 68.3%
 
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 7* Interacao:
-Posicao: [955, 0.3, 65, 15, 1, 1, 31, 4.4585, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.4%, Performance: 99.0%
-Posicao: [100, 0.3, 16, 15, 1, 1, 14, 5, 0] -> Acuracia: 98.4%, Precisao: 99.1%, Recall: 90.9%, Performance: 96.1%
-Posicao: [382, 0.3, 23, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.5%, Precisao: 99.9%, Recall: 97.2%, Performance: 98.9%
-Posicao: [439, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.6%, Performance: 99.0%
-Posicao: [405, 0.3, 34, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.7%, Performance: 99.0%
-Posicao: [483, 0.3, 27, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.4%, Performance: 99.0%
-Posicao: [347, 0.3, 26, 15, 1, 1, 8, 5, 0] -> Acuracia: 99.5%, Precisao: 99.9%, Recall: 97.0%, Performance: 98.8%
-Posicao: [742, 0.3, 26, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.9%, Performance: 99.1%
-Posicao: [100, 0.3, 16, 15, 1, 1, 15, 5, 0] -> Acuracia: 98.5%, Precisao: 99.4%, Recall: 91.1%, Performance: 96.3%
-Posicao: [430, 0.3, 26, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.4%, Performance: 99.0%
+Posicao: [679, 0.077, 114, 15, 1, 0.68, 34, 2.2212, 1.8222] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
+Posicao: [100, 0.0178, 128, 15, 0.9645, 0.6241, 24, 0.3134, 3.4215] -> Acuracia: 75.7%, Precisao: 70.0%, Recall: 52.5%, Performance: 60.8%
+Posicao: [592, 0.134, 94, 15, 0.8761, 0.6521, 31, 2.1818, 1.8507] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
+Posicao: [568, 0.1308, 98, 15, 0.8957, 0.6326, 34, 1.7587, 1.8686] -> Acuracia: 76.5%, Precisao: 65.9%, Recall: 67.5%, Performance: 68.3%
+Posicao: [646, 0.1467, 108, 15, 0.8823, 0.6428, 33, 2.1192, 1.8721] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [113, 0.0549, 84, 15, 0.8601, 0.7022, 24, 2.9718, 0.2187] -> Acuracia: 78.3%, Precisao: 69.2%, Recall: 67.5%, Performance: 69.5%
+Posicao: [598, 0.0587, 128, 4, 0.6652, 0.6679, 36, 3.3531, 1.0244] -> Acuracia: 74.8%, Precisao: 62.8%, Recall: 67.5%, Performance: 67.2%
+Posicao: [669, 0.1313, 101, 15, 0.8875, 0.6294, 33, 1.9241, 1.8127] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [370, 0.0637, 123, 15, 0.9105, 0.5457, 31, 1.4411, 2.3885] -> Acuracia: 74.8%, Precisao: 64.9%, Recall: 60.0%, Performance: 63.5%
+Posicao: [689, 0.1232, 101, 15, 0.86, 0.6272, 32, 2.269, 1.8196] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
 
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 8* Interacao:
-Posicao: [831, 0.3, 54, 15, 1, 1, 28, 4.6608, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.3%, Performance: 98.9%
-Posicao: [285, 0.3, 18, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.4%, Precisao: 99.2%, Recall: 96.7%, Performance: 98.4%
-Posicao: [514, 0.3, 31, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.2%, Performance: 98.9%
-Posicao: [409, 0.3, 29, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.3%, Performance: 98.9%
-Posicao: [547, 0.3, 29, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.0%, Performance: 98.8%
-Posicao: [560, 0.3, 33, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.5%, Performance: 99.0%
-Posicao: [621, 0.3, 41, 15, 1, 1, 11, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.3%, Performance: 98.9%
-Posicao: [761, 0.3, 29, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 97.8%, Performance: 99.2%
-Posicao: [476, 0.3, 31, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 97.7%, Performance: 99.1%
-Posicao: [381, 0.3, 30, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.5%, Performance: 99.0%
+Posicao: [520, 0.2122, 79, 15, 0.8124, 0.5451, 28, 1.5944, 1.5386] -> Acuracia: 76.5%, Precisao: 65.9%, Recall: 67.5%, Performance: 68.3%
+Posicao: [204, 0.1318, 106, 15, 0.9074, 0.6269, 34, 2.1419, 1.5781] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [802, 0.1391, 98, 15, 0.8531, 0.6361, 33, 2.464, 1.5586] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [590, 0.1325, 98, 15, 0.8915, 0.6341, 34, 1.8049, 1.8544] -> Acuracia: 76.5%, Precisao: 65.1%, Recall: 70.0%, Performance: 69.5%
+Posicao: [376, 0.0845, 113, 15, 0.9254, 0.5743, 34, 1.5155, 1.6133] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [356, 0.0887, 90, 15, 0.89, 0.673, 27, 2.5338, 0.9598] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [584, 0.0937, 128, 7, 0.6842, 0.6235, 39, 2.5938, 1.5129] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [617, 0.1222, 102, 15, 0.9003, 0.6217, 33, 1.7438, 1.8417] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [402, 0.1085, 106, 15, 0.9233, 0.6054, 32, 1.4982, 1.9464] -> Acuracia: 76.5%, Precisao: 65.1%, Recall: 70.0%, Performance: 69.5%
+Posicao: [570, 0.1268, 100, 15, 0.892, 0.6282, 33, 1.9324, 1.7351] -> Acuracia: 76.5%, Precisao: 65.1%, Recall: 70.0%, Performance: 69.5%
 
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 9* Interacao:
-Posicao: [105, 0.3, 16, 15, 1, 1, 7, 5, 0] -> Acuracia: 98.3%, Precisao: 98.9%, Recall: 90.4%, Performance: 95.9%
-Posicao: [460, 0.3, 25, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 98.3%, Performance: 99.3%
-Posicao: [481, 0.3, 34, 15, 1, 1, 17, 4.9464, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.6%, Performance: 99.5%
-Posicao: [492, 0.3, 28, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.3%, Performance: 99.3%
-Posicao: [651, 0.3, 16, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.5%, Performance: 99.3%
-Posicao: [420, 0.3, 31, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.5%, Performance: 99.4%
-Posicao: [766, 0.3, 52, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.1%, Performance: 99.2%
-Posicao: [539, 0.3, 30, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.6%, Performance: 99.5%
-Posicao: [681, 0.3, 44, 15, 1, 1, 15, 4.9735, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.2%, Performance: 99.2%
-Posicao: [347, 0.3, 33, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.1%, Performance: 99.2%
+Posicao: [440, 0.2721, 63, 15, 0.716, 0.5, 26, 1.317, 1.4228] -> Acuracia: 75.7%, Precisao: 64.3%, Recall: 67.5%, Performance: 67.8%
+Posicao: [623, 0.2281, 82, 15, 0.8417, 0.6303, 42, 3.6399, 0.0884] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [670, 0.1326, 98, 15, 0.8732, 0.636, 33, 2.2075, 1.7006] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [573, 0.1213, 101, 15, 0.8922, 0.6235, 32, 2.0519, 1.7098] -> Acuracia: 76.5%, Precisao: 66.7%, Recall: 65.0%, Performance: 67.1%
+Posicao: [332, 0.0476, 121, 15, 0.9278, 0.5308, 34, 1.4056, 1.3424] -> Acuracia: 77.4%, Precisao: 67.5%, Recall: 67.5%, Performance: 68.9%
+Posicao: [549, 0.1102, 91, 15, 0.9474, 0.6689, 29, 2.3177, 1.4631] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [573, 0.1244, 128, 10, 0.7126, 0.5874, 41, 1.935, 1.9275] -> Acuracia: 75.7%, Precisao: 65.8%, Recall: 62.5%, Performance: 65.3%
+Posicao: [663, 0.1432, 96, 15, 0.8626, 0.6442, 33, 2.4262, 1.6538] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [511, 0.1458, 92, 15, 0.9176, 0.6547, 33, 1.7457, 1.5691] -> Acuracia: 76.5%, Precisao: 65.1%, Recall: 70.0%, Performance: 69.5%
+Posicao: [521, 0.1283, 99, 15, 0.9075, 0.6286, 34, 1.7938, 1.7003] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
 
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 10* Interacao:
-Posicao: [100, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 98.7%, Precisao: 99.3%, Recall: 92.6%, Performance: 96.9%
-Posicao: [512, 0.3, 32, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.6%, Performance: 99.0%
-Posicao: [441, 0.3, 34, 15, 1, 1, 16, 4.9299, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.6%, Performance: 99.1%
-Posicao: [393, 0.3, 27, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.5%, Performance: 99.0%
-Posicao: [363, 0.3, 23, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.5%, Performance: 99.0%
-Posicao: [337, 0.3, 29, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.6%, Performance: 99.1%
-Posicao: [662, 0.3, 47, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.5%, Performance: 99.0%
-Posicao: [338, 0.3, 27, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.5%, Precisao: 100.0%, Recall: 96.9%, Performance: 98.8%
-Posicao: [693, 0.3, 49, 15, 1, 1, 15, 4.8443, 0] -> Acuracia: 99.5%, Precisao: 99.7%, Recall: 97.3%, Performance: 98.8%
-Posicao: [346, 0.3, 34, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.6%, Performance: 99.1%
+Posicao: [474, 0.2306, 73, 15, 0.7514, 0.5312, 28, 1.51, 1.5263] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [273, 0.0573, 117, 15, 0.9375, 0.6255, 28, 0.9266, 2.8119] -> Acuracia: 76.5%, Precisao: 67.6%, Recall: 62.5%, Performance: 66.0%
+Posicao: [441, 0.121, 98, 15, 0.9084, 0.6354, 32, 1.7599, 1.9439] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [582, 0.1206, 102, 15, 0.8902, 0.6228, 32, 2.109, 1.6829] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [721, 0.1332, 109, 15, 0.8651, 0.6295, 33, 2.2729, 1.6821] -> Acuracia: 76.5%, Precisao: 65.1%, Recall: 70.0%, Performance: 69.5%
+Posicao: [608, 0.1183, 92, 15, 0.9557, 0.6625, 31, 2.2159, 1.6394] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [583, 0.1019, 126, 8, 0.7093, 0.6181, 39, 2.4261, 1.6046] -> Acuracia: 76.5%, Precisao: 65.1%, Recall: 70.0%, Performance: 69.5%
+Posicao: [644, 0.1426, 96, 15, 0.8615, 0.6447, 33, 2.4757, 1.6283] -> Acuracia: 78.3%, Precisao: 68.3%, Recall: 70.0%, Performance: 70.7%
+Posicao: [522, 0.1514, 88, 15, 0.9335, 0.6627, 35, 1.5777, 1.5209] -> Acuracia: 77.4%, Precisao: 66.7%, Recall: 70.0%, Performance: 70.1%
+Posicao: [589, 0.1262, 100, 15, 0.8919, 0.628, 33, 1.9864, 1.7487] -> Acuracia: 78.3%, Precisao: 67.4%, Recall: 72.5%, Performance: 71.9%
 
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-11* Interacao:
-Posicao: [234, 0.3, 17, 15, 1, 1, 9, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 98.0%, Performance: 99.2%
-Posicao: [451, 0.3, 33, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.7%, Performance: 99.5%
-Posicao: [399, 0.3, 30, 15, 1, 1, 15, 4.9642, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.7%, Performance: 99.5%
-Posicao: [414, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [229, 0.3, 35, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.7%, Performance: 99.5%
-Posicao: [363, 0.3, 27, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [550, 0.3, 40, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.6%, Performance: 99.5%
-Posicao: [244, 0.3, 23, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.6%, Performance: 99.5%
-Posicao: [151, 0.3, 22, 15, 1, 1, 16, 4.7129, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.4%, Performance: 99.0%
-Posicao: [384, 0.3, 32, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.6%, Performance: 99.5%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
+Melhor Posicao: [592, 0.1261, 100, 15, 0.8895, 0.628, 33, 1.9948, 1.7508] -> Acuracia: 79.1%, Precisao: 69.0%, Recall: 72.5%, Performance: 72.4%
 
 
-12* Interacao:
-Posicao: [510, 0.3, 29, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.4%, Performance: 99.4%
-Posicao: [386, 0.3, 31, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.8%, Recall: 98.2%, Performance: 99.2%
-Posicao: [395, 0.3, 27, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 98.1%, Performance: 99.3%
-Posicao: [549, 0.3, 29, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.4%, Performance: 99.4%
-Posicao: [304, 0.3, 37, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 97.8%, Performance: 99.2%
-Posicao: [410, 0.3, 27, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.6%, Performance: 99.1%
-Posicao: [456, 0.3, 34, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 97.9%, Performance: 99.2%
-Posicao: [360, 0.3, 21, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 97.9%, Performance: 99.2%
-Posicao: [100, 0.3, 16, 15, 1, 1, 16, 4.6446, 0] -> Acuracia: 98.3%, Precisao: 99.0%, Recall: 89.8%, Performance: 95.7%
-Posicao: [407, 0.3, 29, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 98.2%, Performance: 99.3%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-13* Interacao:
-Posicao: [774, 0.3, 57, 15, 1, 1, 26, 4.6882, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.0%, Performance: 99.2%
-Posicao: [358, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.4%, Performance: 99.0%
-Posicao: [413, 0.3, 27, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.9%, Performance: 99.1%
-Posicao: [546, 0.3, 28, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.7%, Performance: 99.1%
-Posicao: [897, 0.3, 16, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.6%, Precisao: 99.6%, Recall: 97.6%, Performance: 98.9%
-Posicao: [428, 0.3, 27, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 97.9%, Performance: 99.2%
-Posicao: [348, 0.3, 24, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.3%, Performance: 99.0%
-Posicao: [468, 0.3, 20, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.7%, Performance: 99.1%
-Posicao: [291, 0.3, 29, 15, 1, 1, 15, 4.8415, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.4%, Performance: 99.0%
-Posicao: [413, 0.3, 28, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.7%, Performance: 99.1%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-14* Interacao:
-Posicao: [884, 0.3, 73, 15, 1, 1, 29, 4.4618, 0] -> Acuracia: 99.8%, Precisao: 99.7%, Recall: 98.5%, Performance: 99.3%
-Posicao: [353, 0.3, 26, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.8%, Performance: 99.5%
-Posicao: [419, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 99.8%, Recall: 99.3%, Performance: 99.7%
-Posicao: [271, 0.3, 28, 15, 1, 1, 12, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.0%, Performance: 99.1%
-Posicao: [849, 0.3, 16, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 99.0%, Performance: 99.5%
-Posicao: [404, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 99.8%, Recall: 99.3%, Performance: 99.7%
-Posicao: [329, 0.3, 22, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.3%, Performance: 99.3%
-Posicao: [531, 0.3, 24, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.8%, Performance: 99.5%
-Posicao: [602, 0.3, 42, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 99.0%, Performance: 99.5%
-Posicao: [367, 0.3, 32, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.8%, Performance: 99.5%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-15* Interacao:
-Posicao: [281, 0.3, 21, 15, 1, 1, 11, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-Posicao: [373, 0.3, 26, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.3%, Performance: 99.7%
-Posicao: [414, 0.3, 29, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-Posicao: [364, 0.3, 28, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.5%, Performance: 99.4%
-Posicao: [470, 0.3, 16, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.8%, Performance: 99.5%
-Posicao: [391, 0.3, 29, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-Posicao: [374, 0.3, 25, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.4%, Performance: 99.4%
-Posicao: [592, 0.3, 25, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-Posicao: [390, 0.3, 35, 15, 1, 1, 16, 4.7929, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [363, 0.3, 32, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-16* Interacao:
-Posicao: [100, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 98.4%, Precisao: 99.5%, Recall: 90.6%, Performance: 96.2%
-Posicao: [411, 0.3, 27, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.3%, Performance: 99.3%
-Posicao: [401, 0.3, 28, 15, 1, 1, 15, 5, -0.0] -> Acuracia: 99.8%, Precisao: 99.9%, Recall: 99.0%, Performance: 99.6%
-Posicao: [436, 0.3, 28, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [188, 0.3, 22, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.5%, Precisao: 99.7%, Recall: 97.2%, Performance: 98.8%
-Posicao: [401, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 99.9%, Recall: 99.0%, Performance: 99.6%
-Posicao: [525, 0.3, 38, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.9%, Performance: 99.6%
-Posicao: [534, 0.3, 28, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [190, 0.3, 18, 15, 1, 1, 17, 4.8731, 0] -> Acuracia: 99.4%, Precisao: 100.0%, Recall: 96.4%, Performance: 98.6%
-Posicao: [391, 0.3, 29, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 100.0%, Recall: 98.1%, Performance: 99.3%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-17* Interacao:
-Posicao: [100, 0.3, 16, 15, 1, 1, 5, 5, 0] -> Acuracia: 98.4%, Precisao: 98.9%, Recall: 90.5%, Performance: 95.9%
-Posicao: [431, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.9%, Performance: 99.5%
-Posicao: [396, 0.3, 28, 15, 1, 1, 15, 5, -0.0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.9%, Performance: 99.5%
-Posicao: [516, 0.3, 28, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.9%, Performance: 99.6%
-Posicao: [440, 0.3, 29, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.9%, Performance: 99.5%
-Posicao: [409, 0.3, 27, 15, 1.0, 1.0, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.8%, Performance: 99.5%
-Posicao: [595, 0.3, 44, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.9%, Performance: 99.5%
-Posicao: [502, 0.3, 26, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 99.1%, Performance: 99.6%
-Posicao: [341, 0.3, 23, 15, 1, 1, 14, 4.9777, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 99.1%, Performance: 99.6%
-Posicao: [405, 0.3, 29, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 98.9%, Performance: 99.5%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-18* Interacao:
-Posicao: [100, 0.3, 16, 15, 1, 1, 6, 5, 0] -> Acuracia: 98.5%, Precisao: 99.5%, Recall: 90.4%, Performance: 96.1%
-Posicao: [420, 0.3, 29, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.2%, Performance: 99.3%
-Posicao: [400, 0.3, 28, 15, 1, 1.0, 15, 5, -0.0] -> Acuracia: 99.7%, Precisao: 99.6%, Recall: 98.4%, Performance: 99.2%
-Posicao: [504, 0.3, 28, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.7%, Precisao: 99.4%, Recall: 98.5%, Performance: 99.2%
-Posicao: [797, 0.3, 25, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.8%, Precisao: 99.9%, Recall: 98.5%, Performance: 99.4%
-Posicao: [404, 0.3, 28, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.6%, Recall: 98.4%, Performance: 99.2%
-Posicao: [574, 0.3, 42, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.4%, Performance: 99.3%
-Posicao: [506, 0.3, 21, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.4%, Recall: 98.4%, Performance: 99.2%
-Posicao: [499, 0.3, 42, 15, 1, 1, 14, 4.7059, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.7%, Performance: 99.5%
-Posicao: [375, 0.3, 33, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.4%, Performance: 99.3%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-19* Interacao:
-Posicao: [318, 0.3, 16, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.4%, Precisao: 99.7%, Recall: 96.5%, Performance: 98.5%
-Posicao: [408, 0.3, 29, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.4%, Recall: 97.6%, Performance: 98.9%
-Posicao: [405, 0.3, 28, 15, 1.0, 1.0, 15, 5, -0.0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.9%, Performance: 99.1%
-Posicao: [331, 0.3, 28, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.6%, Performance: 99.0%
-Posicao: [726, 0.3, 21, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.0%, Performance: 99.1%
-Posicao: [401, 0.3, 29, 15, 1.0, 1.0, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.9%, Performance: 99.0%
-Posicao: [424, 0.3, 30, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.6%, Performance: 99.0%
-Posicao: [504, 0.3, 18, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.4%, Performance: 98.9%
-Posicao: [565, 0.3, 58, 15, 1, 1, 15, 4.3708, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.6%, Performance: 99.0%
-Posicao: [365, 0.3, 32, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.4%, Performance: 98.9%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-20* Interacao:
-Posicao: [588, 0.3, 28, 15, 1, 1, 20, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.7%, Performance: 99.5%
-Posicao: [399, 0.3, 29, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [410, 0.3, 28, 15, 1.0, 1.0, 15, 5, -0.0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.2%, Performance: 99.3%
-Posicao: [341, 0.3, 28, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.8%, Recall: 98.1%, Performance: 99.2%
-Posicao: [193, 0.3, 25, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.5%, Precisao: 100.0%, Recall: 96.8%, Performance: 98.8%
-Posicao: [400, 0.3, 29, 15, 1.0, 1.0, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.5%, Performance: 99.4%
-Posicao: [332, 0.3, 22, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.5%, Performance: 99.4%
-Posicao: [488, 0.3, 20, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 99.9%, Recall: 98.7%, Performance: 99.5%
-Posicao: [342, 0.3, 35, 15, 1, 1, 16, 4.675, 0] -> Acuracia: 99.7%, Precisao: 99.9%, Recall: 98.2%, Performance: 99.3%
-Posicao: [384, 0.3, 29, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.5%, Performance: 99.4%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-21* Interacao:
-Posicao: [527, 0.3, 33, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-Posicao: [394, 0.3, 29, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.5%, Performance: 99.4%
-Posicao: [410, 0.3, 28, 15, 1.0, 1.0, 15, 5, -0.0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [391, 0.3, 28, 15, 1.0, 1.0, 16, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [483, 0.3, 25, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-Posicao: [404, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [371, 0.3, 25, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.8%, Precisao: 100.0%, Recall: 98.8%, Performance: 99.5%
-Posicao: [534, 0.3, 21, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-Posicao: [118, 0.3, 16, 15, 1, 1, 17, 4.9728, 0] -> Acuracia: 99.4%, Precisao: 100.0%, Recall: 95.2%, Performance: 98.2%
-Posicao: [390, 0.3, 30, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.0%, Performance: 99.6%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-22* Interacao:
-Posicao: [365, 0.3, 32, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.6%, Precisao: 99.4%, Recall: 97.7%, Performance: 98.9%
-Posicao: [397, 0.3, 28, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.4%, Performance: 99.0%
-Posicao: [408, 0.3, 28, 15, 1.0, 1.0, 15, 5, -0.0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.7%, Performance: 99.1%
-Posicao: [550, 0.3, 28, 15, 1.0, 1.0, 16, 5.0, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 98.0%, Performance: 99.1%
-Posicao: [709, 0.3, 25, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.8%, Performance: 99.0%
-Posicao: [406, 0.3, 27, 15, 1.0, 1.0, 16, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.6%, Recall: 97.7%, Performance: 99.0%
-Posicao: [482, 0.3, 34, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.6%, Recall: 97.5%, Performance: 98.9%
-Posicao: [576, 0.3, 22, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.8%, Performance: 99.0%
-Posicao: [497, 0.3, 31, 15, 1, 1, 14, 4.8268, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.8%, Performance: 99.1%
-Posicao: [379, 0.3, 32, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.4%, Performance: 98.9%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-23* Interacao:
-Posicao: [262, 0.3, 25, 15, 1, 1, 11, 5, 0] -> Acuracia: 99.8%, Precisao: 99.8%, Recall: 99.0%, Performance: 99.5%
-Posicao: [403, 0.3, 27, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.1%, Performance: 99.7%
-Posicao: [407, 0.3, 28, 15, 1.0, 1.0, 15, 5, -0.0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.1%, Performance: 99.7%
-Posicao: [581, 0.3, 28, 15, 1.0, 1.0, 17, 5.0, -0.0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.3%, Performance: 99.7%
-Posicao: [556, 0.3, 24, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.3%, Performance: 99.7%
-Posicao: [404, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.1%, Performance: 99.7%
-Posicao: [509, 0.3, 37, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.3%, Performance: 99.7%
-Posicao: [623, 0.3, 21, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.3%, Performance: 99.7%
-Posicao: [796, 0.3, 47, 15, 1, 1, 12, 4.6133, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.3%, Performance: 99.7%
-Posicao: [379, 0.3, 31, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.3%, Performance: 99.7%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-24* Interacao:
-Posicao: [259, 0.3, 20, 15, 1, 1, 12, 5, 0] -> Acuracia: 99.5%, Precisao: 99.5%, Recall: 96.9%, Performance: 98.6%
-Posicao: [407, 0.3, 27, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.5%, Precisao: 99.5%, Recall: 97.2%, Performance: 98.7%
-Posicao: [406, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.7%, Performance: 99.0%
-Posicao: [364, 0.3, 28, 15, 1.0, 1.0, 16, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.4%, Performance: 98.8%
-Posicao: [343, 0.3, 22, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.4%, Performance: 98.8%
-Posicao: [403, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.7%, Performance: 99.0%
-Posicao: [438, 0.3, 32, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.4%, Performance: 98.8%
-Posicao: [524, 0.3, 23, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.8%, Performance: 99.0%
-Posicao: [630, 0.3, 42, 15, 1, 1, 13, 4.7703, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.8%, Performance: 99.0%
-Posicao: [385, 0.3, 30, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.4%, Recall: 97.8%, Performance: 98.9%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-25* Interacao:
-Posicao: [418, 0.3, 25, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 97.8%, Performance: 99.1%
-Posicao: [407, 0.3, 28, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.8%, Performance: 99.0%
-Posicao: [406, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.8%, Performance: 99.0%
-Posicao: [463, 0.3, 28, 15, 1.0, 1.0, 16, 5.0, -0.0] -> Acuracia: 99.7%, Precisao: 99.8%, Recall: 97.7%, Performance: 99.1%
-Posicao: [532, 0.3, 20, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.5%, Performance: 99.0%
-Posicao: [402, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.8%, Performance: 99.0%
-Posicao: [361, 0.3, 25, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.7%, Performance: 99.0%
-Posicao: [434, 0.3, 25, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.3%, Performance: 98.9%
-Posicao: [174, 0.3, 22, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.0%, Performance: 98.8%
-Posicao: [378, 0.3, 31, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.5%, Recall: 97.7%, Performance: 98.9%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-26* Interacao:
-Posicao: [527, 0.3, 28, 15, 1, 1, 18, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.1%, Performance: 99.2%
-Posicao: [406, 0.3, 29, 15, 1.0, 1.0, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.1%, Performance: 99.2%
-Posicao: [403, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.7%, Performance: 99.0%
-Posicao: [506, 0.3, 28, 15, 1.0, 1.0, 16, 5.0, -0.0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.2%, Performance: 99.2%
-Posicao: [708, 0.3, 22, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.1%, Performance: 99.2%
-Posicao: [403, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.7%, Performance: 99.0%
-Posicao: [316, 0.3, 21, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.7%, Performance: 99.1%
-Posicao: [448, 0.3, 24, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.8%, Performance: 99.1%
-Posicao: [100, 0.3, 16, 15, 1, 1, 19, 5, 0] -> Acuracia: 98.5%, Precisao: 99.5%, Recall: 90.6%, Performance: 96.2%
-Posicao: [371, 0.3, 32, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.4%, Performance: 98.9%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-27* Interacao:
-Posicao: [496, 0.3, 29, 15, 1, 1, 17, 5, 0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 98.0%, Performance: 99.1%
-Posicao: [403, 0.3, 29, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.8%, Performance: 99.0%
-Posicao: [403, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.6%, Recall: 98.1%, Performance: 99.1%
-Posicao: [462, 0.3, 28, 15, 1.0, 1.0, 16, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.7%, Recall: 97.8%, Performance: 99.0%
-Posicao: [465, 0.3, 25, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.8%, Performance: 99.1%
-Posicao: [403, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.6%, Recall: 98.1%, Performance: 99.1%
-Posicao: [415, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.6%, Precisao: 99.6%, Recall: 98.1%, Performance: 99.1%
-Posicao: [497, 0.3, 22, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.7%, Precisao: 99.7%, Recall: 98.1%, Performance: 99.2%
-Posicao: [100, 0.3, 16, 15, 1, 1, 18, 5, 0] -> Acuracia: 98.4%, Precisao: 98.7%, Recall: 90.6%, Performance: 95.9%
-Posicao: [368, 0.3, 33, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.9%, Recall: 97.5%, Performance: 99.0%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-
-28* Interacao:
-Posicao: [354, 0.3, 28, 15, 1, 1, 13, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.3%, Performance: 98.9%
-Posicao: [401, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.4%, Performance: 98.9%
-Posicao: [405, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.4%, Performance: 98.9%
-Posicao: [410, 0.3, 28, 15, 1.0, 1.0, 16, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 100.0%, Recall: 97.4%, Performance: 99.0%
-Posicao: [218, 0.3, 30, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.4%, Performance: 98.9%
-Posicao: [403, 0.3, 28, 15, 1.0, 1.0, 15, 5.0, -0.0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.4%, Performance: 98.9%
-Posicao: [489, 0.3, 34, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.4%, Performance: 98.9%
-Posicao: [500, 0.3, 23, 15, 1, 1, 14, 5, 0] -> Acuracia: 99.5%, Precisao: 99.8%, Recall: 97.0%, Performance: 98.8%
-Posicao: [190, 0.3, 19, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.5%, Precisao: 99.8%, Recall: 96.5%, Performance: 98.6%
-Posicao: [397, 0.3, 29, 15, 1, 1, 16, 5, 0] -> Acuracia: 99.6%, Precisao: 99.8%, Recall: 97.4%, Performance: 98.9%
-
-Melhor: Posicao: [403, 0.3, 28, 15, 1, 1, 15, 5, 0] -> Acuracia: 99.9%, Precisao: 100.0%, Recall: 99.5%, Performance: 99.8%
-
-Performance no teste: 99.6%, 99.7%, 97.7%
+Performance no teste: 72.4%, 64.5%, 48.8%

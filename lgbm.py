@@ -7,13 +7,10 @@ class LGBM(Algoritmo):
         return "LIGHT GBM CLASSIFIER"
 
     def definirMinimo(self):
-        return [100, 0.01, 16, 3, 0.5, 0.5, 5, 0, 0]
+        return [100, 0.01, 16, 3, 0.5, 0.5, 5, 0.0, 0.0]
 
     def definirMaximo(self):
         return [2000, 0.3, 128, 15, 1, 1, 50, 5, 5]
-
-    def definirIndices(self):
-        return [1, 4, 5, 7, 8]
 
     def gerarModelo(self, pos):
         return LGBMClassifier(n_estimators=pos[0], learning_rate=pos[1], num_leaves=pos[2],

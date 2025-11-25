@@ -22,18 +22,26 @@ class Algoritmo(ABC):
         pass
 
     @abstractmethod
-    def definirIndices(self):
-        pass
-
-    @abstractmethod
     def gerarModelo(self, pos):
         pass
+
+    def definirIndices(self):
+        indices = []
+
+        for i in range(self.qtd_atributos):
+            if not isinstance(self.min[i], int):
+                indices.append(i)
+
+        return indices
 
     def definirPosicaoInicial(self):
         pos = []
 
         for i in range(self.qtd_atributos):
-            pos.append(self.max[i] // 2)
+            if i in self.indices_float:
+                pos.append((self.min[i] + self.max[i]) / 2)
+            else:
+                pos.append((self.min[i] + self.max[i]) // 2)
 
         return pos
 
@@ -70,7 +78,7 @@ class Algoritmo(ABC):
         for i in range(self.qtd_atributos):
             if pos[i] < self.min[i]:
                 pos[i] = self.min[i]
-            if pos[i] > self.max[i]:
+            elif pos[i] > self.max[i]:
                 pos[i] = self.max[i]
 
         return pos

@@ -12,9 +12,6 @@ class KNN(Algoritmo):
     def definirMaximo(self):
         return [30, 1, 2, 100]
 
-    def definirIndices(self):
-        return []
-
     def gerarModelo(self, pos):
         lista_weights = ['uniform', 'distance']
         lista_metric = ['euclidean', 'manhattan', 'minkowski']

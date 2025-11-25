@@ -12,9 +12,6 @@ class XGB(Algoritmo):
     def definirMaximo(self):
         return [1000, 0.3, 12, 1, 1, 5, 10, 10, 10]
 
-    def definirIndices(self):
-        return [1, 3, 4]
-
     def gerarModelo(self, pos):
         return XGBClassifier(n_estimators=pos[0], learning_rate=pos[1], max_depth=pos[2],
                              subsample=pos[3], colsample_bytree=pos[4], gamma=pos[5],

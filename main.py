@@ -1,8 +1,10 @@
 from pso import PSO
 
-lista = ["KNeighborsClassifier", "RandomForestClassifier", "LogisticRegression",
-         "XGBClassifier", "LGBMClassifier", "CatBoostClassifier"]
+lista = ["RandomForestClassifier", "LogisticRegression", "XGBClassifier", "LGBMClassifier", "CatBoostClassifier"]
+
+PSO.definirXY('Mimic IV.parquet')
 
 for item in lista:
     print(item)
-    PSO(10, 1, item, 'Mimic IV.parquet')
+    pso = PSO(10, 10, item)
+    pso.comecarLoopPrincipal()
