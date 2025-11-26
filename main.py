@@ -1,6 +1,7 @@
 from pso import PSO
 
-lista = ["RandomForestClassifier", "LogisticRegression", "XGBClassifier", "LGBMClassifier", "CatBoostClassifier"]
+lista = ["KNeighborsClassifier", "RandomForestClassifier", "LogisticRegression",
+         "XGBClassifier", "LGBMClassifier", "CatBoostClassifier"]
 
 PSO.definirXY('Mimic IV.parquet')
 
